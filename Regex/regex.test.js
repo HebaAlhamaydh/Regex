@@ -6,8 +6,9 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
-    // Add your logic.
-    return;
+    let regex= /[A-Za-z][^0-9]A$/g
+    let result=regex.test(s);
+    return result;
 }
 
 
@@ -15,8 +16,9 @@ function capitalA(s){
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    // Add your logic.
-    return;
+    let regex=/^([a-z0-9_-]+)@([a-z0-9_\.-]+)\.io$/
+    let result=regex.test(email);
+    return result;
 }
 
 /* You have a text that contain image names with their extention you need to write a function to 
